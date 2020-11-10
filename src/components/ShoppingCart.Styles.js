@@ -12,13 +12,16 @@ export const CartContainer = styled.div`
   top: 45px;
   right: 40px;
   z-index: 5;
+
+  @media (max-width: 765px) {
+    width: 430px;
+    height: 500px;
+  }
 `;
 
-export const CartItemsContainer = styled.div`
+export const CartItems = styled.li`
   height: 240px;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 `;
-
-export const CartItems = styled.li``;

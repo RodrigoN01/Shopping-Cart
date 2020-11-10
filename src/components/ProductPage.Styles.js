@@ -3,16 +3,35 @@ import styled from 'styled-components';
 export const PageContainer = styled.div`
   display: flex;
   justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 30px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+
+  @media (max-width: 765px) {
+    max-width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
 `;
 
-export const ImageContainer = styled.div``;
+export const ImageContainer = styled.div`
+  margin-right: 140px;
+`;
 
-export const ContentContainer = styled.div``;
+export const Img = styled.img`
+  width: 400px;
+`;
 
-export const Heading = styled.h1``;
+export const ContentContainer = styled.div`
+  @media (max-width: 765px) {
+    margin-top: 30px;
+  }
+`;
+
+export const Heading = styled.h1`
+  font-size: 20px;
+  font-weight: 200;
+`;
 
 export const Price = styled.span`
   margin: 15px 0;

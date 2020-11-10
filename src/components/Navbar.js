@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { NavbarContainer, NavbarMenu, NavbarItem } from './Navbar.Styles';
 import ShoppingCart from './ShoppingCart';
 
-const sampleData = new Array(2).fill('item name');
+const sampleData = new Array(7).fill('Cart Item');
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -16,10 +16,8 @@ const Navbar = () => {
     <>
       <NavbarContainer>
         <NavbarMenu>
-          <NavbarItem onClick={onClick}>
-            My Cart
-            {open && <ShoppingCart data={sampleData} />}
-          </NavbarItem>
+          <NavbarItem onClick={onClick}>My Cart</NavbarItem>
+          {open && <ShoppingCart data={sampleData} />}
         </NavbarMenu>
       </NavbarContainer>
     </>

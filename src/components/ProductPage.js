@@ -15,6 +15,7 @@ import {
   Heading,
   Price,
   Paragraph,
+  Img,
 } from './ProductPage.Styles';
 
 function ProductPage() {
@@ -22,7 +23,7 @@ function ProductPage() {
     <>
       <PageContainer>
         <ImageContainer>
-          <img src={img} alt='tee-shirt' />
+          <Img src={img} alt='tee-shirt' />
         </ImageContainer>
         <ContentContainer>
           <Heading>Classic Tee</Heading>
